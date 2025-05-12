@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Impostor</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="initial-scale=1">
+        <meta name="description" content="">
+        <meta charset="UTF-8">
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'></svg>">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <script src="script.js"></script>
+        <options>
+            <span id="categories">
+                <span id="categories-title" class="option-title">
+                    <span>
+                        <button class="toggle-list" onclick="toggleList(this);">
+                            <svg viewBox="0 0 20 20">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M8.5 6L12.5 10L8.5 14"></path>
+                            </svg>
+                        </button>
+                        <a class="option-name">Categories:&nbsp;</a>
+                        <a id="categories-count"></a>
+                    </span>
+                </span>
+                <span id="categories-list-box" class="list-box" style="height: 0;">
+                    <span id="categories-list" class="list"></span>
+                </span>
+            </span>
+            <span id="players">
+                <span id="players-title" class="option-title">
+                    <span>
+                        <button class="toggle-list" onclick="toggleList(this);" toggled>
+                            <svg viewBox="0 0 20 20">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M8.5 6L12.5 10L8.5 14"></path>
+                            </svg>
+                        </button>
+                        <a class="option-name">Players:&nbsp;</a>
+                        <a id="player-count"></a>
+                    </span>
+                    <button id="player-add" onclick="addPlayer();">
+                        <svg viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-width="1.2" d="M5 10H15M10 5V15"></path>
+                        </svg>
+                    </button>
+                </span>
+                <span id="players-list-box" class="list-box">
+                    <span id="players-list" class="list"></span>
+                </span>
+            </span>
+            <span id="impostors" class="option-title">
+                <span>
+                    <a class="option-name">Impostors:&nbsp;</a>
+                    <a id="impostor-count"></a>
+                </span>
+                <span>
+                    <button id="impostor-remove" onclick="removeImpostor();">
+                        <svg viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-width="1.2" d="M5 10H15"></path>
+                        </svg>
+                    </button>
+                    <button id="impostor-add" onclick="addImpostor();">
+                        <svg viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-width="1.2" d="M5 10H15M10 5V15"></path>
+                        </svg>
+                    </button>
+                </span>
+            </span>
+            <button id="start" onclick="start();">Start</button>
+        </options>
+        <game hidden>
+            <span id="card">
+                <span id="card-back"></span>
+                <span id="card-front" onpointerdown="grabCard(event);"></span>
+            </span>
+            <span id="info"></span>
+            <button id="continue" onclick="continueGame();">Continue</button>
+        </game>
+    </body>
+</html>

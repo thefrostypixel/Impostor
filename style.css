@@ -1,0 +1,195 @@
+html {
+    background: #111;
+    color: #EEE;
+    font-family: sans-serif;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    --width: min(100vw, 600px);
+    --height: 100svh;
+}
+
+body {
+    margin: 0;
+}
+
+button {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0;
+    border: none;
+    color: inherit;
+    font-size: inherit;
+    cursor: pointer;
+}
+button[disabled] {
+    background: #0000;
+    opacity: .5;
+    cursor: default;
+}
+
+options, game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    width: var(--width);
+    min-height: var(--height);
+    padding: 20px;
+    margin: 0 calc(50vw - var(--width) / 2);
+}
+:is(options, game)[hidden] {
+    display: none;
+}
+
+options > span {
+    display: block;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    border-radius: 20px;
+    background: #333;
+}
+options > span button {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    background: #484848;
+}
+options > span button:not(.toggle-list) {
+    margin: -5px -5px -5px 15px;
+}
+button:is(.toggle-list, #player-add, #impostor-add, #impostor-remove) {
+    background: #555;
+}
+.option-title {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+    height: 60px;
+    padding: 20px;
+    border-radius: 20px;
+    background: #444;
+}
+.option-title > span {
+    display: flex;
+}
+.toggle-list {
+    margin: -5px 10px -5px -5px;
+}
+.toggle-list svg {
+    transition: transform .2s;
+}
+.toggle-list[toggled] svg {
+    transform: rotate(90deg);
+}
+.list-box {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    overflow-y: hidden;
+    transition: height .2s;
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px 20px;
+    gap: 10px;
+}
+.player, .category {
+    display: block;
+    box-sizing: border-box;
+    height: 30px;
+    padding: 5px 0;
+}
+.category {
+    cursor: pointer;
+}
+.checkmark {
+    float: left;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: -5px 10px -5px -5px;
+    border-radius: 10px;
+    background: #484848;
+}
+.player-name {
+    display: inline-block;
+    width: calc(100% - 80px);
+}
+.player-name input {
+    width: 100%;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: #0000;
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+}
+.player button {
+    float: right;
+}
+options > *:not(:first-child) {
+    margin-top: 20px;
+}
+
+#start, #continue {
+    width: calc(var(--width) - 40px);
+    height: 60px;
+    margin-top: 20px;
+    border-radius: 20px;
+    background: #333;
+}
+
+#card {
+    position: relative;
+    display: block;
+    height: min(var(--width) * 1.35 - 54px, var(--height) - 120px);
+}
+#card[hidden] {
+    display: none;
+}
+#card > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    line-height: 1.5;
+}
+#card-front {
+    background: #444;
+    cursor: grab;
+    transition: top .2s;
+}
+#card-back {
+    justify-content: flex-end;
+    padding-bottom: 50px;
+    background: #333;
+}
+.card-name {
+    font-size: 32px;
+    font-weight: bold;
+}
+#info {
+    display: block;
+    text-align: center;
+    width: 100%;
+    line-height: 1.5;
+}
+#info[hidden] {
+    display: none;
+}
