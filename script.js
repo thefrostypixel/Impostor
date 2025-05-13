@@ -5,6 +5,7 @@ let cardsToShow = [];
 let gameState = "options";
 let categories = [
     {name: "Minecraft Blocks", file: "blocks", enabled: true, words: undefined},
+    {name: "Minecraft Effects", file: "effects", enabled: true, words: undefined},
     {name: "Minecraft Entities", file: "entities", enabled: true, words: undefined},
     {name: "Minecraft Items", file: "items", enabled: true, words: undefined},
 ];

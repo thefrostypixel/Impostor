@@ -51,7 +51,6 @@ Brown Dye
 Brush
 Bucket
 Bundle
-%s/%s
 Burn Pottery Shard
 Burn Pottery Sherd
 Camel Spawn Egg
@@ -92,19 +91,14 @@ Cookie
 Copper Ingot
 Cow Spawn Egg
 Banner Pattern
-Creeper Charge
 Creeper Spawn Egg
 Crossbow
-Projectile:
 Cyan Dye
 Danger Pottery Shard
 Danger Pottery Sherd
 Dark Oak Boat
 Dark Oak Boat with Chest
 Debug Stick
-%s has no properties
-selected "%s" (%s)
-"%s" to %s
 Diamond
 Diamond Axe
 Diamond Boots
@@ -117,7 +111,6 @@ Diamond Pickaxe
 Diamond Shovel
 Diamond Sword
 Disc Fragment
-Music Disc - 5
 Dolphin Spawn Egg
 Donkey Spawn Egg
 Dragon's Breath
@@ -147,43 +140,14 @@ Fermented Spider Eye
 Map
 Fire Charge
 Firework Rocket
-Flight Duration:
 Firework Star
-Black
-Blue
-Brown
-Custom
-Cyan
-Fade to
-Twinkle
-Gray
-Green
-Light Blue
-Light Gray
-Lime
-Magenta
-Orange
-Pink
-Purple
-Red
-Unknown Shape
-Burst
-Creeper-shaped
-Large Ball
-Small Ball
-Star-shaped
-Trail
-White
-Yellow
 Fishing Rod
 Flint
 Flint and Steel
 Smithing Template
 Banner Pattern
-Flow
 Flow Pottery Sherd
 Banner Pattern
-Flower Charge
 Flower Pot
 Fox Spawn Egg
 Friend Pottery Shard
@@ -195,7 +159,6 @@ Ghast Tear
 Glass Bottle
 Glistering Melon Slice
 Banner Pattern
-Globe
 Glow Berries
 Glow Ink Sac
 Glow Item Frame
@@ -222,7 +185,6 @@ Green Dye
 Guardian Spawn Egg
 Gunpowder
 Banner Pattern
-Guster
 Guster Pottery Sherd
 Heart of the Sea
 Heart Pottery Shard
@@ -269,32 +231,6 @@ Light Blue Dye
 Light Gray Dye
 Lime Dye
 Lingering Potion
-Awkward Lingering Potion
-Lingering Uncraftable Potion
-Lingering Potion of Fire Resistance
-Lingering Potion of Harming
-Lingering Potion of Healing
-Lingering Potion of Infestation
-Lingering Potion of Invisibility
-Lingering Potion of Leaping
-Lingering Potion of Levitation
-Lingering Potion of Luck
-Mundane Lingering Potion
-Lingering Potion of Night Vision
-Lingering Potion of Oozing
-Lingering Potion of Poison
-Lingering Potion of Regeneration
-Lingering Potion of Slow Falling
-Lingering Potion of Slowness
-Lingering Potion of Strength
-Lingering Potion of Swiftness
-Thick Lingering Potion
-Lingering Potion of the Turtle Master
-Lingering Water Bottle
-Lingering Potion of Water Breathing
-Lingering Potion of Weakness
-Lingering Potion of Weaving
-Lingering Potion of Wind Charging
 Llama Spawn Egg
 Lodestone Compass
 Mace
@@ -311,50 +247,30 @@ Minecart
 Miner Pottery Shard
 Miner Pottery Sherd
 Banner Pattern
-Thing
 Mooshroom Spawn Egg
 Mourner Pottery Shard
 Mourner Pottery Sherd
 Mule Spawn Egg
 Mushroom Stew
 Music Disc
-Samuel Åberg - 5
-Music Disc
-C418 - 11
-Music Disc
-C418 - 13
-Music Disc
-C418 - blocks
-Music Disc
-C418 - cat
-Music Disc
-C418 - chirp
 Music Disc
 Music Disc
-Lena Raine - Creator (Music Box)
-Lena Raine - Creator
 Music Disc
-C418 - far
 Music Disc
-C418 - mall
 Music Disc
-C418 - mellohi
 Music Disc
-Lena Raine - otherside
 Music Disc
-Lena Raine - Pigstep
 Music Disc
-Aaron Cherof - Precipice
 Music Disc
-Aaron Cherof - Relic
 Music Disc
-C418 - stal
 Music Disc
-C418 - strad
 Music Disc
-C418 - wait
 Music Disc
-C418 - ward
+Music Disc
+Music Disc
+Music Disc
+Music Disc
+Music Disc
 Raw Mutton
 Name Tag
 Nautilus Shell
@@ -387,7 +303,6 @@ Phantom Membrane
 Phantom Spawn Egg
 Pig Spawn Egg
 Banner Pattern
-Snout
 Piglin Brute Spawn Egg
 Piglin Spawn Egg
 Pillager Spawn Egg
@@ -402,32 +317,6 @@ Popped Chorus Fruit
 Raw Porkchop
 Potato
 Potion
-Awkward Potion
-Uncraftable Potion
-Potion of Fire Resistance
-Potion of Harming
-Potion of Healing
-Potion of Infestation
-Potion of Invisibility
-Potion of Leaping
-Potion of Levitation
-Potion of Luck
-Mundane Potion
-Potion of Night Vision
-Potion of Oozing
-Potion of Poison
-Potion of Regeneration
-Potion of Slow Falling
-Potion of Slowness
-Potion of Strength
-Potion of Swiftness
-Thick Potion
-Potion of the Turtle Master
-Water Bottle
-Potion of Water Breathing
-Potion of Weakness
-Potion of Weaving
-Potion of Wind Charging
 Archer Pottery Shard
 Arms Up Pottery Shard
 Prize Pottery Shard
@@ -474,22 +363,6 @@ Sheep Spawn Egg
 Shelter Pottery Shard
 Shelter Pottery Sherd
 Shield
-Black Shield
-Blue Shield
-Brown Shield
-Cyan Shield
-Gray Shield
-Green Shield
-Light Blue Shield
-Light Gray Shield
-Lime Shield
-Magenta Shield
-Orange Shield
-Pink Shield
-Purple Shield
-Red Shield
-White Shield
-Yellow Shield
 Shulker Shell
 Shulker Spawn Egg
 Sign
@@ -498,23 +371,11 @@ Silverfish Spawn Egg
 Skeleton Horse Spawn Egg
 Skeleton Spawn Egg
 Banner Pattern
-Skull Charge
 Skull Pottery Shard
 Skull Pottery Sherd
 Slimeball
 Slime Spawn Egg
 Smithing Template
-Applies to:
-Add ingot or crystal
-Armor
-Add a piece of armor
-Ingots & Crystals
-Ingredients:
-Add Netherite Ingot
-Diamond Equipment
-Add diamond armor, weapon, or tool
-Netherite Ingot
-Upgrade:
 Sniffer Spawn Egg
 Snort Pottery Shard
 Snort Pottery Sherd
@@ -526,32 +387,6 @@ Spider Eye
 Spider Spawn Egg
 Smithing Template
 Splash Potion
-Awkward Splash Potion
-Splash Uncraftable Potion
-Splash Potion of Fire Resistance
-Splash Potion of Harming
-Splash Potion of Healing
-Splash Potion of Infestation
-Splash Potion of Invisibility
-Splash Potion of Leaping
-Splash Potion of Levitation
-Splash Potion of Luck
-Mundane Splash Potion
-Splash Potion of Night Vision
-Splash Potion of Oozing
-Splash Potion of Poison
-Splash Potion of Regeneration
-Splash Potion of Slow Falling
-Splash Potion of Slowness
-Splash Potion of Strength
-Splash Potion of Swiftness
-Thick Splash Potion
-Splash Potion of the Turtle Master
-Splash Water Bottle
-Splash Potion of Water Breathing
-Splash Potion of Weakness
-Splash Potion of Weaving
-Splash Potion of Wind Charging
 Spruce Boat
 Spruce Boat with Chest
 Spyglass
@@ -572,32 +407,6 @@ Bucket of Tadpole
 Tadpole Spawn Egg
 Smithing Template
 Tipped Arrow
-Tipped Arrow
-Uncraftable Tipped Arrow
-Arrow of Fire Resistance
-Arrow of Harming
-Arrow of Healing
-Arrow of Infestation
-Arrow of Invisibility
-Arrow of Leaping
-Arrow of Levitation
-Arrow of Luck
-Tipped Arrow
-Arrow of Night Vision
-Arrow of Oozing
-Arrow of Poison
-Arrow of Regeneration
-Arrow of Slow Falling
-Arrow of Slowness
-Arrow of Strength
-Arrow of Swiftness
-Tipped Arrow
-Arrow of the Turtle Master
-Arrow of Splashing
-Arrow of Water Breathing
-Arrow of Weakness
-Arrow of Weaving
-Arrow of Wind Charging
 Minecart with TNT
 Torchflower Seeds
 Totem of Undying
