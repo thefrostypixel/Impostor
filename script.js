@@ -4,10 +4,11 @@ let roles = {};
 let cardsToShow = [];
 let gameState = "options";
 let categories = [
-    {name: "Minecraft Blocks", file: "blocks", enabled: true, words: undefined},
-    {name: "Minecraft Effects", file: "effects", enabled: true, words: undefined},
-    {name: "Minecraft Entities", file: "entities", enabled: true, words: undefined},
-    {name: "Minecraft Items", file: "items", enabled: true, words: undefined},
+    {name: "Minecraft Blocks", file: "minecraft_blocks", enabled: true, words: undefined},
+    {name: "Minecraft Effects", file: "minecraft_effects", enabled: true, words: undefined},
+    {name: "Minecraft Enchantments", file: "minecraft_enchantments", enabled: true, words: undefined},
+    {name: "Minecraft Entities", file: "minecraft_entities", enabled: true, words: undefined},
+    {name: "Minecraft Items", file: "minecraft_items", enabled: true, words: undefined},
 ];
 let word = "";
 
@@ -18,26 +19,26 @@ function escapeForHTML(str) {
 function updateOptions() {
     document.querySelector("#categories-count").innerText = `${categories.filter(category => category.enabled).length}/${categories.length}`;
     document.querySelector("#categories-list").innerHTML = categories.map(category => `
-<span class="category" onclick="toggleCategory(this);">
+<button class="category" onclick="toggleCategory(this);">
     <a class="checkmark"${category.enabled ? " checked" : ""}>${category.enabled ? `
         <svg viewBox="0 0 20 20">
             <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M6 10L9 14L14 6"></path>
         </svg>
 ` : ""}</a>
     <a class="category-name">${escapeForHTML(category.name)}</a>
-</span>`).join("");
+</button>`).join("");
     document.querySelector("#player-count").innerText = players.length;
     document.querySelector("#players-list").innerHTML = players.map(player => `
 <span class="player">
     <a class="player-name">${escapeForHTML(player)}</a>
-    <button class="player-remove" onclick="removePlayer(this);"${players.length > 3 ? "" : " disabled"}>
-        <svg viewBox="0 0 20 20">
-            <path stroke="currentColor" stroke-linecap="round" stroke-width="1.2" d="M6 6L14 14M6 14L14 6"></path>
-        </svg>
-    </button>
     <button class="player-rename" onclick="renamePlayer(this);">
         <svg viewBox="0 0 20 20">
             <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M5.5 14.5L6.5 11.5L12.5 5.5C14 4 16 6 14.5 7.5L8.5 13.5ZM11.5 6.5L13.5 8.5"></path>
+        </svg>
+    </button>
+    <button class="player-remove" onclick="removePlayer(this);"${players.length > 3 ? "" : " disabled"}>
+        <svg viewBox="0 0 20 20">
+            <path stroke="currentColor" stroke-linecap="round" stroke-width="1.2" d="M6 6L14 14M6 14L14 6"></path>
         </svg>
     </button>
 </span>`).join("");
@@ -51,6 +52,7 @@ let freeListSizeTimeouts = [];
 function toggleList(button) {
     button.toggleAttribute("toggled");
     let listBox = button.closest("options > *").querySelector(".list-box");
+    listBox.toggleAttribute("inert", !button.hasAttribute("toggled"));
     listBox.setAttribute("style", `height: ${button.hasAttribute("toggled") ? 0 : listBox.querySelector(":scope > *").scrollHeight}px;`);
     listBox.offsetHeight;
     listBox.setAttribute("style", `height: ${button.hasAttribute("toggled") ? `${listBox.querySelector(":scope > *").scrollHeight}px` : 0};`);
@@ -121,7 +123,7 @@ function removeImpostor() {
 }
 
 function start() {
-    let words = categories.map(category => category.enabled && category.words ? category.words : []).flat();
+    let words = [...new Set(categories.map(category => category.enabled && category.words ? category.words : []).flat())];
     if (words.length) {
         word = words[Math.floor(Math.random() * words.length)];
         roles = {};
@@ -199,3 +201,5 @@ document.addEventListener("DOMContentLoaded", () => {
     updateOptions();
     categories.filter(category => category.enabled).forEach(category => fetch(`categories/${category.file}`).then(r => r.text()).then(words => category.words = words.split("\n").map(word => word.trim()).filter(word => word)));
 });
+
+// fetch("categories/alphabetically_random").then(r=>r.text()).then(t=>console.log([...new Set(t.split("\n").filter(w=>w))].sort((a,b)=>a.localeCompare(b)).join("\n")))
